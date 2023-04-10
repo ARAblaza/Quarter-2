@@ -1,0 +1,55 @@
+<html>
+<head>
+	<style>
+		body{
+			color: lightgrey;
+			font-size: large;
+			font-family: Verdana, sans-serif;
+			margin: 5vh 10vw;
+			background: rgb(35,35,40);
+			color: lightgrey;
+			display: flex;
+			justify-content: center;
+		}
+		div{
+			width: 50%;
+			height: 50%;
+			display: block;
+		}
+		input{
+			border: none;
+			outline: none;
+			padding: 1%;
+		}
+		input[type="text"]{
+			width: 100%;
+		}
+		input[type="submit"]{
+			
+			text-transform: uppercase;
+			font-weight: bold;
+			background: darkgreen;
+			color: whitesmoke;
+			padding: 1%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h4>Letters - Numbers</h4>
+		<form onsubmit="updateLetters(); return false">
+			<input id="letters-el" type="text">
+			<input type="submit">
+		</form>
+		<p id="letters">placeholder</p>
+		<hr>
+		<h4>Numbers - Letters</h4>
+		<form onsubmit="updateNumbers(); return false">
+			<input id="numbers-el" type="text">
+			<input type="submit">
+		</form>
+		<p id="numbers">placeholder</p>
+		<script src="test.js"></script>
+	</div>
+</body>
+</html>
