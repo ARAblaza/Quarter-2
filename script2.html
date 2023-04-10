@@ -20,15 +20,22 @@
 			border: none;
 			outline: none;
 			padding: 1%;
+			margin: 1%;
 		}
 		input[type="text"]{
 			width: 100%;
 		}
 		input[type="submit"]{
-			
 			text-transform: uppercase;
 			font-weight: bold;
 			background: darkgreen;
+			color: whitesmoke;
+			padding: 1%;
+		}
+		input[type="reset"]{
+			text-transform: uppercase;
+			font-weight: bold;
+			background: darkred;
 			color: whitesmoke;
 			padding: 1%;
 		}
@@ -40,6 +47,7 @@
 		<form onsubmit="updateLetters(); return false">
 			<input id="letters-el" type="text">
 			<input type="submit">
+			<input type="reset">
 		</form>
 		<p id="letters">placeholder</p>
 		<hr>
@@ -47,6 +55,7 @@
 		<form onsubmit="updateNumbers(); return false">
 			<input id="numbers-el" type="text">
 			<input type="submit">
+			<input type="reset">
 		</form>
 		<p id="numbers">placeholder</p>
 		<script src="test.js"></script>
